@@ -1,0 +1,2 @@
+## Have anime girl archetypes flirt with you when you run terminal commands!
+Simply inject `preexec () { $FULL_PATH_TO_SCRIPT }` at the end your zshrc to have that script run before each command. I recommend having a script in `~/.local/bin/` but it can technically be anywhere. If you use another shell, see if it allows you to execute a command before every command you type. The only two that I know of (since they are the only two I use interactively) are bash and zsh.
