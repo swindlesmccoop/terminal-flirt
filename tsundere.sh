@@ -22,3 +22,4 @@ print_strings () {
 }
 
 print_strings | head -n $RANDSTRNUM | tail -n 1
+printf "[0m"
