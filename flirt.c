@@ -2,13 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-
-#define RED "\033[31m"
-#define GREEN "\033[32m"
-#define YELLOW "\033[33m"
-#define BLUE "\033[36m"
-
-#define STRINGS "preset"
+#include "config.h"
 
 int main() {
 	const char* colors[] = { RED, GREEN, YELLOW, BLUE };
@@ -25,7 +19,7 @@ int main() {
 	else if (STRINGS == "maid") { strings = maid_strings; }
 	else if (STRINGS == "onee") { strings = onee_strings; }
 	else if (STRINGS == "kouhai") { strings = kouhai_strings; } else {
-		fprintf(stderr, "Error: Invalid STRINGS macro. Please edit main.c\n");
+		fprintf(stderr, "Error: Invalid STRINGS macro. Please edit flirt.c\n");
 		return 1;
 	}
 

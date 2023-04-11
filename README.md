@@ -20,4 +20,4 @@ preexec() {
 to your zshrc.
 
 ## Configuration
-Edit the `STRINGS` macro in [main.c](main.c)
+Edit `config.h` and uncomment the line with the girl type you want.
