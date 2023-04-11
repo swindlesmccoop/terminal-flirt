@@ -1,7 +1,10 @@
 ## Have your terminal flirt with you
 
 ## Install
-Run `sudo make install`.
+```
+make
+sudo make install
+```
 
 ### Bash
 Add
