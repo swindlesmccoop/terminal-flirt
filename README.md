@@ -2,7 +2,22 @@
 
 ## Install
 Run `sudo make install`.
-Add `flirt` to your shells `preexec()` function or similar
+
+### Bash
+Add
+```bash
+trap flirt DEBUG
+```
+to your bashrc.
+
+### Zsh
+Add
+```zsh
+preexec() {
+    flirt
+}
+```
+to your zshrc.
 
 ## Configuration
 Edit the `STRINGS` macro in [main.c](main.c)
