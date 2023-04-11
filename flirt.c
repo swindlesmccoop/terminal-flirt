@@ -19,7 +19,7 @@ int main() {
 	else if (STRINGS == "maid") { strings = maid_strings; }
 	else if (STRINGS == "onee") { strings = onee_strings; }
 	else if (STRINGS == "kouhai") { strings = kouhai_strings; } else {
-		fprintf(stderr, "Error: Invalid STRINGS macro. Please edit flirt.c\n");
+		fprintf(stderr, "Error: Invalid STRINGS macro. Please edit config.h\n");
 		return 1;
 	}
 
