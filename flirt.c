@@ -31,7 +31,8 @@ int main() {
 	const char* str = strings[rand() % 3];
 
 	//print the string in the random color
-	printf("%s%s\n", COLOR, str);
+	printf("%s%s%s\n", COLOR, str, DEFAULT);
 
 	return 0;
 }
+
