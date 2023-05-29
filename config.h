@@ -4,6 +4,9 @@
 #define BLUE "\033[36m"
 #define NORMAL "\033[0m"
 
+//change 1 to 0 to disable colors
+#define COLORIZE 1
+
 //#define STRINGS "tsundere"
 //#define STRINGS "imouto"
 //#define STRINGS "maid"
