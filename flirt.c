@@ -27,7 +27,9 @@ int main() {
 	srand(time(NULL) ^ (getpid() << 16));
 
 	//select a random color and a random string
-	const char* COLOR = colors[rand() % 4];
+	const char* COLOR;
+	if (COLORIZE) { COLOR = colors[rand() % 4]; }
+	else { COLOR = NORMAL; }
 	const char* str = strings[rand() % 3];
 
 	//print the string in the random color
