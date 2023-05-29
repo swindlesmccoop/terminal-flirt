@@ -23,7 +23,4 @@ preexec() {
 to your zshrc.
 
 ## Configuration
-Edit `config.h` and uncomment the line with the girl type you want.
-
-## Todo
-- [ ] Add `config.h` option to enable/disable colors
+Edit `config.h` and uncomment the line with the girl type you want. You can also disable colors by changing the `COLORIZE` define from 1 to 0.
