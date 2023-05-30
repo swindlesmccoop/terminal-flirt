@@ -24,3 +24,9 @@ to your zshrc.
 
 ## Configuration
 Edit `config.h` and uncomment the line with the girl type you want. You can also disable colors by changing the `COLORIZE` define from 1 to 0.
+
+## Todo
+- [x] ~~Add `config.h` option to enable/disable colors
+  - Done by @Kusoneko
+- Add better method for strings
+- 
