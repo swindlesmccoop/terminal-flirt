@@ -28,10 +28,13 @@ int main() {
 
 	//select a random color and a random string
 	const char* COLOR;
-	if (COLORIZE) { COLOR = colors[rand() % 4]; }
-	else { COLOR = NORMAL; }
-	const char* str = strings[rand() % 3];
+	#ifdef COLORIZE
+		COLOR = colors[rand() % 4];
+	#else
+		COLOR= NORMAL;
+	#endif
 
+	const char* str = strings[rand() % 3];
 	//print the string in the random color
 	printf("%s%s%s\n", COLOR, str, NORMAL);
 
