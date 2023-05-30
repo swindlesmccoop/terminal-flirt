@@ -25,6 +25,6 @@ to your zshrc.
 
 ## Todo
 - [x] ~~Add `config.h` option to enable/disable colors
-  - Done by @Kusoneko
+  - Done by [@Kusoneko](https://github.com/Kusoneko)
 - [ ] Add way to enable multiple archetypes at once
 - [ ] Add more strings
