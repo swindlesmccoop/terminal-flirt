@@ -5,45 +5,55 @@
 #include "config.h"
 
 int main() {
+	const int len = 0
+#ifdef TSUNDERE
+		+ 3
+#endif
+#ifdef IMOUTO
+		+ 3
+#endif
+#ifdef MAID
+		+ 3
+#endif
+#ifdef ONEE
+		+ 3
+#endif
+#ifdef KOUHAI
+		+ 3
+#endif
+	;
+
 	const char* colors[] = { RED, GREEN, YELLOW, BLUE };
-	
-	const char* tsundere_strings[] = {
+
+	const char* strings[] = {
+#ifdef TSUNDERE
 		"It's not like I wanted to do it for you or anything.",
 		"I'm not doing this for you again.",
 		"Ugh, what a bother."
-	};
-	
-	const char* imouto_strings[] = {
+#endif
+#ifdef IMOUTO
 		"I'll take care of it, onii-chan!",
 		"Onii-chan, don't worry about it.",
 		"Leave it to me, onii-chan!"
-	};
-	
-	const char* maid_strings[] = {
+#endif
+#ifdef MAID
 		"As you wish.",
 		"I'll do it for you.",
 		"Yes, master."
-	};
-	
-	const char* onee_strings[] = {
+#endif
+#ifdef ONEE
 		"My, my, I'll do it for you.",
 		"I think I can handle it this time.",
 		"I'll make sure this executes properly."
-	};
-	
-	const char* kouhai_strings[] = {
+#endif
+#ifdef KOUHAI
 		"I'll do it, senpai.",
 		"This will be a breeze.",
 		"Senpai, I'll take care of it for you."
+#endif
 	};
 
-	//select the array of strings based on the STRINGS macro
-	const char** strings;
-	if (STRINGS == "tsundere") { strings = tsundere_strings; }
-	else if (STRINGS == "imouto") { strings = imouto_strings; }
-	else if (STRINGS == "maid") { strings = maid_strings; }
-	else if (STRINGS == "onee") { strings = onee_strings; }
-	else if (STRINGS == "kouhai") { strings = kouhai_strings; } else {
+	if (len == 0) {
 		fprintf(stderr, "Error: Invalid STRINGS macro. Please edit config.h\n");
 		return 1;
 	}
@@ -59,7 +69,7 @@ int main() {
 		COLOR= NORMAL;
 	#endif
 
-	const char* str = strings[rand() % 3];
+	const char* str = strings[rand() % len];
 	//print the string in the random color
 	printf("%s%s%s\n", COLOR, str, NORMAL);
 
